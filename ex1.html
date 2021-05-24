@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Bai 1: so nguyen to
+		/*function soNguyenTo (n) {
+			var kiemtra = true;
+			if(n<2){
+				kiemtra = false;
+			}
+			for(var i = 2; i < n -1 ; i++){
+				if(n%i == 0){
+					kiemtra = false;
+					break;
+				}
+			}
+			if(kiemtra == true){
+				console.log(n + " la so nguyen to")
+			}else{
+				console.log(n + " khong phai la so nguyen to")
+			}
+		}
+		soNguyenTo(1);
+		soNguyenTo(2);
+		soNguyenTo(3);
+		soNguyenTo(4);
+		soNguyenTo(5);*/
+
+		//Bai 2: nhap mang kiem tra so nguyen to
+		/*var arr = new Array(5, 29, 40, 6, 34);
+		function arraySoNguyenTo(n){
+			var kiemtra = true;
+			if(n<2){
+				kiemtra = false;
+			}
+			for(var i = 2; i < n -1 ; i++){
+				if(n%i == 0){
+					kiemtra = false;
+					break;
+				}
+			}
+			if(kiemtra == true){
+				console.log(n + " la so nguyen to")
+			}else{
+				console.log(n + " khong phai la so nguyen to")
+			}
+		}
+		arraySoNguyenTo(arr[0])
+		arraySoNguyenTo(arr[1])
+		arraySoNguyenTo(arr[2])
+		arraySoNguyenTo(arr[3])
+		arraySoNguyenTo(arr[4])*/
+
+		// }
+		//Bai 3: số hoàn hảo.
+		/*function soHoanHao(n){
+			var sum = 0;
+			for(var i = 0; i < n; i++){
+				if(n%i == 0){
+					sum = sum + i;
+				}
+			}
+			if(sum == n){
+				console.log(n + " la so hoan hao")
+			}else{
+				console.log(n + " khong phai la so hoan hao")
+			}
+		}
+		soHoanHao(6)
+		soHoanHao(17)
+		soHoanHao(28)*/
+		//Bai 4: nhap mang kiem tra so hoan hao
+		/*var arr = new Array (18,28,39,6,40);
+		function array (n) {
+			 var sum = 0;
+			for(var i = 0; i < n; i++){
+				if(n%i == 0){
+					sum = sum + i;
+				}
+			}
+			if(sum == n){
+				console.log(n + " la so hoan hao")
+			}else{
+				console.log(n + " khong phai la so hoan hao")
+			}
+		}
+		array(arr[0])
+		array(arr[2])
+		array(arr[3])
+		array(arr[4])
+		array(arr[1])*/
+		//Bai 5: số tự đối xứng
+		/*function soDoiXung (n) {
+			var sum = 0, original;
+			original = n;
+			while(n != 0){
+				var digit = n % 10;
+				sum = (sum*10) + digit;
+				n = n / 10;
+			}
+			if(sum == original){
+				console.log(original + " là số đối xứng")
+			}else{
+				console.log(original + " không phải là số đối xứng")
+			}
+		}
+		soDoiXung(121)*/
+		//Bai 14 Fibonacy
+		/*function fibonacy (n) {
+
+			var f0 = 0, f1 = 1, fn = 1;
+			for(var i = 0; i <= n; i++){
+				if(i<2){
+					console.log(i);
+				}else{
+					fn = f0 + f1;
+					f0 = f1;
+					f1 = fn;
+					console.log(fn)
+				}
+			}
+		}
+		fibonacy(5)*/
+		//Bai 18:
+		function bai18 (n) {
+			var s = 1;
+			if(n%2==0){
+				for(var i = 2; i<=n; i++){
+					s*=i;
+				}
+			}else{
+				for(var i = 1; i<=n; i++){
+					s*=i;
+				}
+			}
+			return s;
+		}
+		console.log(bai18(5))
+		//Bai 12: Viết chương trình nhập mảng một chiều A với n phần tử Xuất mảng A ra màn hình
+		//Xuất ra các số chia hết cho 5
+		/*var arr = new Array(12,25,34,5, 50); 
+		function arrayChiaHetCho5 (n){
+			if(n%5 == 0){
+				console.log('chia het cho 5')
+			}else{
+				console.log('khong chia het cho 5')
+			}
+		}
+		arrayChiaHetCho5(arr[0])
+		arrayChiaHetCho5(arr[1])
+		arrayChiaHetCho5(arr[2])
+		arrayChiaHetCho5(arr[3])
+		arrayChiaHetCho5(arr[4])*/
+		// Bai 9:
+		/*function bai9 (x,n) {
+			var s = 1;
+			for(var i = 1; i<= n; i++){
+				s+=x**i/i;
+			}
+			return s;
+		}
+		console.log(bai9(3,3))*/
+	</script>
+</body>
+</html>
